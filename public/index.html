@@ -1,0 +1,27 @@
+<html>
+    <head>
+        <title>My TODO List</title>
+        <script type="text/javascript" src="jquery.js"></script>
+        <script type="text/javascript" src="main.js"></script>
+		<link rel="stylesheet" type="text/css" href="main.css">
+    </head>
+    <body onload="start();" style="padding:20px;">
+        <div>
+		        <input type="text" id="newTODO" style="width: 200px" />&nbsp;&nbsp;
+		        <input type="button" value="Save" onclick="addTODO();" />
+	      </div>
+	      <div>
+		        <br/><hr/><br/>
+	      </div>
+	      <div>
+		        <input type="text" id="searchTODO" style="width: 200px" />&nbsp;&nbsp;
+		        <input type="button" value="Search" onclick="getTODOs();" />
+	      </div>
+	      <div>
+		        <br/><hr/><br/>
+	      </div>
+	      <div>
+		        <div id="todoList"></div>
+	      </div>
+    </body>
+</html>
